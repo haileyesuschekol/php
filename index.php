@@ -36,21 +36,28 @@ $contacts = [
     ],
 ];
 
- function filterByName($contacts, $name){
-   $searchName = [];
+//  function filterByName($contacts, $key, $value){
+//    $searchName = [];
 
-   foreach($contacts as $contact){
-    if($contact["name"] === $name){
-        $searchName[] = $contact;
-    }
-}
-return $searchName;
+//    foreach($contacts as $contact){
+//     if($contact[$key] === $value){
+//         $searchName[] = $contact;
+//     }
+// }
+// return $searchName;
 
-}
+// }
+
+
+// array_filter function
+$filteredData = array_filter($contacts, function($data){
+   return $data['name'] === "John";
+})
+
 ?>
 
 <ul>
-    <?php foreach(filterByName( $contacts, "John") as $contact):?>
+    <?php foreach($filteredData as $contact):?>
      <li>  <?= $contact["name"]?></li>
      <li>  <?= $contact["age"]?></li>
     <a href="<?= $contact["website"]?>">contact</a>

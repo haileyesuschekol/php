@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>php</title>
-</head>
-<body>
-    
-    
     <?php
 $greeting = "php";
 echo "Hello $greeting";
@@ -20,11 +10,8 @@ if($book){
 }else{
     $message = "you have to read it!";
 }
-?>
 
-<h2> <?php echo $message?> </h2>
-
-<?php
+//array
 $contacts = [
     ["name"=>"John",
      "age"=>18,
@@ -52,16 +39,6 @@ $contacts = [
 // array_filter function
 $filteredData = array_filter($contacts, function($data){
    return $data['name'] === "John";
-})
+});
 
-?>
-
-<ul>
-    <?php foreach($filteredData as $contact):?>
-     <li>  <?= $contact["name"]?></li>
-     <li>  <?= $contact["age"]?></li>
-    <a href="<?= $contact["website"]?>">contact</a>
-    <?php endforeach; ?>
-</ul>
-</body>
-</html>
+require "index.view.php";

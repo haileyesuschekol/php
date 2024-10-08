@@ -42,5 +42,5 @@ $filteredData = array_filter($contacts, function($data){
 });
 
 require("url.php");
-$heading = "About Us";
-require "views/about.view.php";
+$heading = "Home";
+require "views/index.view.php";

@@ -41,5 +41,6 @@ $filteredData = array_filter($contacts, function($data){
    return $data['name'] === "John";
 });
 
-$heading = "Home";
-require "views/index.view.php";
+$heading = "About Us";
+
+require "views/about.view.php";

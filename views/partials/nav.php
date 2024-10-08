@@ -5,13 +5,13 @@
               <div class="flex-shrink-0">
                 <img class="h-8 w-8" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
               </div>
+
               <div class="hidden md:block">
                 <div class="ml-10 flex items-baseline space-x-4">
-                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                   
-                  <a href="/website/index.php" class=" <?= urls('/website/index.php')?> rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white">Home</a>
-                  <a href="/website/about.php" class="<?= urls('/website/about.php')?> rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
-                  <a href="/website/contact.php" class=" <?= urls('/website/contact.php')?> rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> 
+                  <a href="/" class=" <?= urls('/index.php')? 'bg-gray-900 text-white' : "text-gray-300"?> rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white">Home</a>
+                  <a href="/about.php" class="<?= urls('/about.php')? 'bg-gray-900 text-white' : "text-gray-300"?> rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
+                  <a href="/contact.php" class=" <?= urls('/contact.php')? 'bg-gray-900 text-white' : "text-gray-300"?> rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
                 </div>
               </div>
             </div>

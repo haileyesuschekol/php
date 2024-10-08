@@ -41,5 +41,10 @@ $filteredData = array_filter($contacts, function($data){
    return $data['name'] === "John";
 });
 
+// echo "<pre>";
+// echo var_dump($_SERVER);
+// echo "</pre>";
+
+require("url.php");
 $heading = "Home";
 require "views/index.view.php";
